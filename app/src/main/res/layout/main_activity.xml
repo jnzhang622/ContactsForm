@@ -1,169 +1,119 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-
-    <ImageView
-        android:id="@+id/NameIcon"
-        android:layout_width="30dp"
-        android:layout_height="30dp"
-        android:src="@drawable/ic_person_black_18dp"
-        app:layout_constraintVertical_bias=".12"
-        app:layout_constraintHorizontal_bias=".1"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
-    <com.google.android.material.textfield.TextInputEditText
+    <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/NameField"
-        android:layout_width="250dp"
-        android:layout_height="60dp"
-        android:layout_gravity="center_horizontal"
-        android:textAlignment="center"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         android:hint="Name"
-        app:layout_constraintVertical_bias=".1"
-        app:layout_constraintHorizontal_bias=".6"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:startIconDrawable="@drawable/ic_person_black_18dp"
+        app:layout_constraintHeight_percent=".13"
+        app:layout_constraintBottom_toTopOf="@+id/PhoneField"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </com.google.android.material.textfield.TextInputLayout>
 
-    <ImageView
-        android:id="@+id/PhoneIcon"
-        android:layout_width="30dp"
-        android:layout_height="30dp"
-        android:src="@drawable/ic_phone_black_18dp"
-        app:layout_constraintVertical_bias=".22"
-        app:layout_constraintHorizontal_bias=".1"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
-    <com.google.android.material.textfield.TextInputEditText
+    <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/PhoneField"
-        android:layout_width="150dp"
-        android:layout_height="60dp"
-        android:layout_gravity="center_horizontal"
-        android:textAlignment="center"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         android:hint="Phone"
-        app:layout_constraintVertical_bias=".2"
-        app:layout_constraintHorizontal_bias=".35"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent=".13"
+        app:startIconDrawable="@drawable/ic_phone_black_18dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-    <com.google.android.material.textfield.TextInputEditText
-        android:layout_width="75dp"
-        android:layout_height="60dp"
-        android:hint="Area"
-        app:layout_constraintVertical_bias=".2"
-        app:layout_constraintHorizontal_bias=".82"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/NameField"
+        app:layout_constraintBottom_toTopOf="@+id/AddressField">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </com.google.android.material.textfield.TextInputLayout>
 
-    <ImageView
-        android:id="@+id/AddressIcon"
-        android:layout_width="30dp"
-        android:layout_height="30dp"
-        android:src="@drawable/ic_place_black_18dp"
-        app:layout_constraintVertical_bias=".32"
-        app:layout_constraintHorizontal_bias=".1"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
-    <com.google.android.material.textfield.TextInputEditText
+    <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/AddressField"
-        android:layout_width="250dp"
-        android:layout_height="60dp"
-        android:layout_gravity="center_horizontal"
-        android:textAlignment="center"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         android:hint="Address"
-        app:layout_constraintVertical_bias=".3"
-        app:layout_constraintHorizontal_bias=".6"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:startIconDrawable="@drawable/ic_place_black_18dp"
+        app:layout_constraintHeight_percent=".13"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-    <com.google.android.material.textfield.TextInputEditText
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/PhoneField"
+        app:layout_constraintBottom_toTopOf="@+id/CityField">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/CityField"
-        android:layout_width="250dp"
-        android:layout_height="60dp"
-        android:layout_gravity="center_horizontal"
-        android:textAlignment="center"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         android:hint="City"
-        app:layout_constraintVertical_bias=".4"
-        app:layout_constraintHorizontal_bias=".6"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent=".13"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-    <com.google.android.material.textfield.TextInputEditText
-        android:id="@+id/ZipField"
-        android:layout_width="250dp"
-        android:layout_height="60dp"
-        android:layout_gravity="center_horizontal"
-        android:textAlignment="center"
-        android:hint="Zip"
-        app:layout_constraintVertical_bias=".5"
-        app:layout_constraintHorizontal_bias=".6"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/AddressField"
+        app:layout_constraintBottom_toTopOf="@+id/StateField">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </com.google.android.material.textfield.TextInputLayout>
 
-    <ImageView
-        android:id="@+id/EmailIcon"
-        android:layout_width="30dp"
-        android:layout_height="30dp"
-        android:src="@drawable/ic_email_black_18dp"
-        app:layout_constraintVertical_bias=".6"
-        app:layout_constraintHorizontal_bias=".1"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+    <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/StateField"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:hint="State"
+        app:layout_constraintHeight_percent=".13"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
-    <com.google.android.material.textfield.TextInputEditText
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CityField"
+        app:layout_constraintBottom_toTopOf="@+id/EmailField">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/EmailField"
-        android:layout_width="250dp"
-        android:layout_height="60dp"
-        android:layout_gravity="center_horizontal"
-        android:textAlignment="center"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         android:hint="Email"
-        app:layout_constraintVertical_bias=".6"
-        app:layout_constraintHorizontal_bias=".6"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:startIconDrawable="@drawable/ic_email_black_18dp"
+        app:layout_constraintHeight_percent=".13"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/StateField"
+        app:layout_constraintBottom_toTopOf="@+id/BirthdayField">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </com.google.android.material.textfield.TextInputLayout>
 
-    <ImageView
-        android:id="@+id/BirthdayIcon"
-        android:layout_width="30dp"
-        android:layout_height="30dp"
-        android:src="@drawable/ic_cake_24px"
-        app:layout_constraintVertical_bias=".69"
-        app:layout_constraintHorizontal_bias=".1"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
-    <com.google.android.material.textfield.TextInputEditText
+    <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/BirthdayField"
-        android:layout_width="250dp"
-        android:layout_height="60dp"
-        android:layout_gravity="center_horizontal"
-        android:textAlignment="center"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         android:hint="Birthday"
-        app:layout_constraintVertical_bias=".7"
-        app:layout_constraintHorizontal_bias=".6"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:startIconDrawable="@drawable/ic_cake_24px"
+        app:layout_constraintHeight_percent=".13"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/EmailField"
+        app:layout_constraintBottom_toTopOf="parent">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
