@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <ImageView
+        android:id="@+id/NameIcon"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/ic_person_black_18dp"
+        app:layout_constraintVertical_bias=".12"
+        app:layout_constraintHorizontal_bias=".1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/NameField"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center_horizontal"
+        android:textAlignment="center"
+        android:hint="Name"
+        app:layout_constraintVertical_bias=".1"
+        app:layout_constraintHorizontal_bias=".4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/PhoneIcon"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/ic_phone_black_18dp"
+        app:layout_constraintVertical_bias=".22"
+        app:layout_constraintHorizontal_bias=".1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/PhoneField"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center_horizontal"
+        android:textAlignment="center"
+        android:hint="Phone"
+        app:layout_constraintVertical_bias=".2"
+        app:layout_constraintHorizontal_bias=".32"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <androidx.appcompat.widget.ActionMenuView
+        android:layout_width="200dp"
+        android:layout_height="20dp"
+        android:hint="Area"
+        app:layout_constraintVertical_bias=".2"
+        app:layout_constraintHorizontal_bias=".32"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/AddressIcon"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/ic_place_black_18dp"
+        app:layout_constraintVertical_bias=".32"
+        app:layout_constraintHorizontal_bias=".1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/AddressField"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center_horizontal"
+        android:textAlignment="center"
+        android:hint="Address"
+        app:layout_constraintVertical_bias=".3"
+        app:layout_constraintHorizontal_bias=".4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/CityField"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center_horizontal"
+        android:textAlignment="center"
+        android:hint="City"
+        app:layout_constraintVertical_bias=".4"
+        app:layout_constraintHorizontal_bias=".4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/ZipField"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center_horizontal"
+        android:textAlignment="center"
+        android:hint="Zip"
+        app:layout_constraintVertical_bias=".5"
+        app:layout_constraintHorizontal_bias=".4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/EmailIcon"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/ic_email_black_18dp"
+        app:layout_constraintVertical_bias=".6"
+        app:layout_constraintHorizontal_bias=".1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/EmailField"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center_horizontal"
+        android:textAlignment="center"
+        android:hint="Email"
+        app:layout_constraintVertical_bias=".6"
+        app:layout_constraintHorizontal_bias=".4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
